@@ -1,0 +1,54 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  
+  
+  fill(31, 97, 141); 
+  stroke(0);
+  strokeWeight(3);
+  rect(100, 100, 200, 200, 10); 
+  
+  
+  fill(255);
+  stroke(0);
+  strokeWeight(2);
+  ellipse(150, 160, 40, 40);
+  ellipse(250, 160, 40, 40);
+  
+  
+  fill(0, 0, 255, 200); 
+  ellipse(150, 160, 15, 15);
+  ellipse(250, 160, 15, 15);
+  
+
+  fill(0, 255, 0); // Verde neón
+  noStroke();
+  rect(170, 230, 60, 20, 5); 
+  
+  
+  fill(255, 0, 0, 120); 
+  stroke(0);
+  strokeWeight(2);
+  triangle(200, 180, 185, 210, 215, 210);
+  
+  
+  stroke(0);
+  strokeWeight(4);
+  line(150, 100, 130, 60);
+  line(250, 100, 270, 60);
+  
+  
+  fill(255, 255, 0, 150);
+  noStroke();
+  ellipse(130, 60, 15, 15);
+  ellipse(270, 60, 15, 15);
+  
+  
+  noFill();
+  stroke(255, 0, 0);
+  strokeWeight(2);
+  ellipse(200, 300, 40, 20); 
+}
