@@ -1,0 +1,15 @@
+{
+  "name": "aa_3.2_escena",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
