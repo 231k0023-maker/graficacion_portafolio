@@ -1,0 +1,212 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot en CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="lienzo">
+        
+    
+        <div class="antena-palo"></div>
+        <div class="antena-codo"></div>
+        <div class="antena-bola"></div>
+
+
+        <div class="cuello"></div>
+
+        
+        <div class="brazo izquierdo"></div>
+        <div class="brazo derecho"></div>
+
+        
+        <div class="cabeza">
+            <div class="visor">
+                <div class="ojo izquierdo"></div>
+                <div class="ojo derecho"></div>
+            </div>
+        </div>
+
+        
+        <div class="cuerpo">
+            <div class="panel-pecho"></div>
+            <div class="circulo-pecho"></div>
+        </div>
+
+        
+        <div class="mano izquierda"></div>
+        <div class="mano derecha"></div>
+
+    </div>
+
+</body>
+
+
+style.css
+
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50;
+}
+
+.lienzo {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(25, 35, 45); 
+    overflow: hidden; 
+}
+
+
+.antena-palo {
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background-color: rgb(46, 204, 113);
+    left: 200px;
+    top: 75px; 
+}
+
+.antena-codo {
+    position: absolute;
+    width: 3px;
+    height: 18px;
+    background-color: rgb(46, 204, 113);
+    left: 200px; 
+    top: 60px;   
+    transform: rotate(50deg); 
+    transform-origin: bottom center;
+}
+
+.antena-bola {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(46, 204, 113);
+    border-radius: 50%;
+    left: 213px; 
+    top: 58px;
+}
+
+
+.cuello {
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: rgb(27, 94, 32);
+    left: 185px;
+    top: 175px; 
+}
+
+
+.cabeza {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background-color: rgb(46, 204, 113);
+    border-radius: 15px;
+    left: 140px; 
+    top: 100px;  
+}
+
+.visor {
+    position: absolute;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(15, 30, 20);
+    border-radius: 8px;
+    left: 15px; 
+    top: 22px;
+}
+
+
+.ojo {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(235, 247, 240);
+    border-radius: 50%;
+    top: 9px; 
+}
+
+.ojo.izquierdo { left: 20px; }
+.ojo.derecho { right: 20px; }
+
+
+.cuerpo {
+    position: absolute;
+    width: 140px;
+    height: 160px;
+    background-color: rgb(30, 132, 73);
+    border-radius: 20px;
+    left: 130px; 
+    top: 190px;  
+}
+
+
+.panel-pecho {
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    background-color: rgb(200, 230, 201);
+    border-radius: 5px;
+    left: 25px;
+    top: 35px;
+}
+
+
+.circulo-pecho {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(46, 204, 113);
+    border-radius: 50%;
+    left: 52px; 
+    top: 57px;
+}
+
+
+.brazo {
+    position: absolute;
+    width: 4px;
+    height: 55px;
+    background-color: rgb(30, 132, 73);
+    top: 240px;
+    transform-origin: top center;
+}
+
+.brazo.izquierdo {
+    left: 130px;
+    transform: rotate(35deg);
+}
+
+.brazo.derecho {
+    left: 270px;
+    transform: rotate(-35deg);
+}
+
+
+.mano {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid rgb(39, 174, 96); 
+    top: 290px;
+}
+
+.mano.izquierda { left: 80px; }
+.mano.derecha { left: 290px; }
+</html>
