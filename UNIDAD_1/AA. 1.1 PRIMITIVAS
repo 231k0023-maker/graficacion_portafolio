@@ -1,0 +1,37 @@
+function setup() {
+  createCanvas(400, 400);
+
+  background("blue");
+
+  fill("magenta");
+  stroke(0);
+  strokeWeight(3);
+  rect(120, 70, 160, 100);
+
+  fill("white");
+  ellipse(160, 110, 30, 30);
+  ellipse(240, 110, 30, 30);
+
+  fill("magenta");
+  rect(140, 180, 120, 120);
+
+  rect(80, 190, 60, 30);
+  rect(260, 190, 60, 30);
+
+  rect(155, 300, 35, 60);
+  rect(210, 300, 35, 60);
+
+  line(200, 70, 200, 40);
+
+  line(80, 205, 55, 205);
+  line(320, 205, 345, 205);
+
+  fill("white");
+  triangle(200, 220, 185, 250, 215, 250);
+}
+
+function draw() {
+  fill(255, 255, 0, 150);
+  noStroke();
+  circle(mouseX, mouseY, 40);
+}
